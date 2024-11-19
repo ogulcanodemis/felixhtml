@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt Banner</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid bg-light py-2">
+        <div class="row align-items-center text-center text-lg-start">
+            <!-- WhatsApp Icon and Text -->
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-center justify-content-center mb-3 mb-lg-0">
+                <i class="fab fa-whatsapp fa-2x text-success me-2"></i>
+                <span class="fw-bold">24/7 Kontakt</span>
+            </div>
+            <!-- Middle Text -->
+            <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column flex-lg-row align-items-center justify-content-center mb-3 mb-lg-0">
+                <span>24 Stunden Notdienst in Stuttgart Zuffenhausen</span>
+                <span class="arrow ms-3">→</span>
+                <span class="ms-3">Wir sind in <strong>15-30 Minuten</strong> bei Ihnen.</span>
+            </div>
+            <!-- Phone Button -->
+            <div class="col-lg-3 col-md-12 col-sm-12 d-flex align-items-center justify-content-center">
+                <a href="tel:+4917623513191" class="btn btn-warning phone-button text-dark">
+                    <i class="fas fa-phone-alt"></i> +49 176 23513191
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-light py-2">
+        <div class="container-fluid">
+            <!-- Logo Section -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="https://via.placeholder.com/50x50" alt="Logo" class="me-2" style="width: 40px;">
+                <div>
+                    <strong>FELIX</strong> <br>
+                    <small>Schlüsseldienst</small>
+                </div>
+            </a>
+
+            <!-- Toggle button for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Schlüsselnotdienst</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Schlüsseldienst</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Preise</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tresoröffnung</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Leistungen</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Einsatzgebiete</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
+                </ul>
+
+                <!-- Language Selector -->
+                <div class="dropdown me-3">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown">
+                        <img src="https://flagcdn.com/de.svg" alt="DE" style="width: 25px;" class="me-2"> DEU
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/tr.svg" alt="TR" style="width: 25px;" class="me-2"> Türkçe</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/fr.svg" alt="FR" style="width: 25px;" class="me-2"> Français</a></li>
+                    </ul>
+                </div>
+
+                <!-- Search Icon -->
+                <i class="fas fa-search ms-3" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#searchModal"></i>
+
+                <!-- WhatsApp Contact Button -->
+                <a href="tel:+4917623513191" class="btn btn-light border d-flex align-items-center ms-3">
+                    <i class="fab fa-whatsapp fa-2x text-success me-2"></i>
+                    <span class="fw-bold">24/7 Kontakt</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="searchModalLabel">Arama Yap</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="form-control" placeholder="Aramak istediğiniz kelimeyi yazın...">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Ara</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Üst Başlık Bölümü -->
+        <div class="container mt-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="fw-bold">Schlüsseldienst Felix</h1>
+                    <p>Haben Sie Ihren Schlüssel verloren? Haben Sie sich ausgesperrt? Keine Sorge, wir sind mit unserem professionellen Schlüsseldienst immer für Sie da!</p>
+                    <div class="badge bg-success text-white fs-5 py-2 px-3">Stuttgart - Zuffenhausen</div>
+                    <div class=" mt-5 d-flex align-items-center">
+                        <img src="https://via.placeholder.com/90x50" alt="Locksmith Image" class="img-fluid rounded px-3">
+                        <img src="https://via.placeholder.com/90x50" alt="Locksmith Image" class="img-fluid rounded px-3">
+                        <img src="https://via.placeholder.com/90x50" alt="Locksmith Image" class="img-fluid rounded px-3">
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="https://via.placeholder.com/450x300" alt="Locksmith Image" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container my-5">
+            <div class="row">
+                <!-- Sol Bilgilendirme Kartı -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card bg-primary text-white ">
+                        <div class="card-body d-flex align-items-center">
+                            <img src="https://via.placeholder.com/150x200" alt="Placeholder" class="me-3 rounded">
+                            <div>
+                                <h5>Ausgesperrt? Schlüssel verloren? Schloss kaputt?</h5>
+                                <p>
+                                    Our emergency locksmith service is on site quickly and opens your lock reliably.
+                                    Thanks to our first-class equipment, we are able to open many locks without destroying
+                                    the cylinder at a fair price. Give us a call and get professional help from an expert!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Sağ Bilgilendirme Listesi -->
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center justify-content-center title-line-container">
+                        <h2 class="fw-bold title title-line">Schlüsseldienst Felix</h2>
+                    </div>
+                    <div class="card card-container">
+                        <div class="card-body d-flex align-items-center mx-auto">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12 mx-auto ">
+                                    <li> lorem ipsum sit amet</li>
+                                    <li> lorem ipsum sit amet</li>
+                                    <li> lorem ipsum sit amet</li>
+                                    <li> lorem ipsum sit amet</li>
+                                    <li> lorem ipsum sit amet</li>
+                                    <li> lorem ipsum sit amet</li>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 mx-auto ">
+                                    <li> lorem ipsum sit amet</li>
+                                    <li> lorem ipsum sit amet</li>
+                                    <li> lorem ipsum sit amet</li>
+                                    <li> lorem ipsum sit amet</li>
+                                    <li> lorem ipsum sit amet</li>
+                                    <li> lorem ipsum sit amet</li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="container my-5">
+            <div class="row align-items-center">
+                <!-- Sol Bölüm -->
+                <div class="col-lg-6 text-center text-lg-start mb-4">
+                    <img src="https://via.placeholder.com/600x400" alt="Locksmith" class="img-fluid rounded mb-3 locksmith-image">
+                    <div class="d-flex align-items-center google-review mb-3">
+                        <img src="https://via.placeholder.com/50x50" alt="Google Review" class="me-2 google-review-icon">
+                        <span class="google-review-text">Verifizierte Bewertungen</span>
+                    </div>
+                    <div class="locksmith-card mb-3">
+                        <div class="locksmith-card-body d-flex align-items-center">
+                            <i class="fas fa-phone-alt fa-2x me-3 phone-icon"></i>
+                            <span class="fw-bold phone-number">+49 176 23513191</span>
+                        </div>
+                        <p class="text-center mt-2 arrival-time">Wir sind in <strong>15-30 Minuten</strong> bei Ihnen.</p>
+                    </div>
+                </div>
+    
+                <!-- Sağ Bölüm -->
+                <div class="col-lg-6">
+                    <h2 class="text-danger fw-bold service-title">24/7 Professional Locksmith Service!</h2>
+                    <p class="service-description">Rufen Sie uns jetzt an und lernen Sie unseren schnellen und zuverlässigen Schlüsseldienst kennen!</p>
+                    <ul class="service-list">
+                        <li class="service-item"><i class="fas fa-car-side me-2"></i> An- und Abfahrtskosten Pauschal 15,- € - keine versteckten Kilometerpreise!</li>
+                        <li class="service-item"><i class="fas fa-user-shield me-2"></i> Wir kalkulieren immer kundenfreundlich - abhängig vom Sicherheitsstandard.</li>
+                        <li class="service-item"><i class="fas fa-truck me-2"></i> Kostenloser Transport</li>
+                        <li class="service-item"><i class="fas fa-tools me-2"></i> Qualifizierte Monteure aus der Nähe</li>
+                        <li class="service-item"><i class="fas fa-euro-sign me-2"></i> Zahlungsarten: Bargeld und EC-Karte</li>
+                    </ul>
+                    <div class="discount-banner bg-success text-white p-3 rounded mt-4">
+                        <h5>10% Rabatt für Studenten und Rentner</h5>
+                    </div>
+                    <a href="tel:+4917623513191" class="btn call-to-action-btn d-flex align-items-center justify-content-center mt-3">
+                        <i class="fas fa-phone-alt me-2"></i> Jetzt anrufen
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+            <!-- Section: Locksmith Solutions -->
+    <div class="section-locksmith bg-primary text-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Sol Bölüm -->
+                <div class="col-lg-5 mb-4">
+                    <h2 class="section-title">Haben Sie den Schlüssel zu Ihrem Haus verloren?</h2>
+                    <p class="section-description">
+                        Wenn Sie auf der Suche nach einem zuverlässigen Schlüsseldienst sind, kontaktieren Sie uns jetzt!
+                        Ausgesperrt sein ist kein Problem mehr, wir sind da!
+                    </p>
+                    <p class="section-description">
+                        Rufen Sie uns jetzt an und lernen Sie unseren schnellen und zuverlässigen Schlüsseldienst kennen!
+                    </p>
+                    <a href="https://wa.me/4917623513191" class="btn whatsapp-button d-flex align-items-center justify-content-center">
+                        <i class="fab fa-whatsapp me-2"></i> Rufen Sie uns an
+                    </a>
+                </div>
+
+                <!-- Orta Resim -->
+                <div class="col-lg-2 d-flex justify-content-center align-items-center">
+                    <img src="https://via.placeholder.com/150x200" alt="Locksmith Image" class="center-image img-fluid rounded">
+                </div>
+
+                <!-- Sağ Bölüm -->
+                <div class="col-lg-5">
+                    <h3 class="section-subtitle text-success">Sichere Lösungen durch unser erfahrenes Team</h3>
+                    <p class="section-description">
+                        Ein Moment der Zerstreutheit, das Vergessen des Schlüssels oder eine Fehlfunktion des Schlosses... Was auch immer der Grund sein mag, ausgesperrt zu sein kann frustrierend sein. Aber keine Sorge! Mit unserem professionellen Schlüsseldienst bleiben Sie nicht hinter den Türen.
+                    </p>
+                    <div class="d-flex justify-content-center align-items-center icons-container">
+                        <div class="icon-circle">
+                            <i class="fas fa-door-closed fa-2x"></i>
+                        </div>
+                        <div class="icon-line"></div>
+                        <div class="icon-circle">
+                            <i class="fas fa-key fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container my-5">
+        <h2 class="text-center fw-bold">Felix Schlüsseldienst Preisliste</h2>
+        <p class="text-center text-muted">Bitte kontaktieren Sie uns für detaillierte Informationen</p>
+        
+        <div class="d-flex justify-content-center align-items-center flex-wrap">
+            <!-- Kartlar Başlangıcı -->
+            <div class="service-card m-3">
+                <div class="card-header">
+                    <h5>Türöffnung</h5>
+                </div>
+                <div class="card-body">
+                    <p>6:00 uhr bis 24:00<br>Festpreis 95 €</p>
+                </div>
+            </div>
+            <div class="service-card m-3">
+                <div class="card-header">
+                    <h5>Schlüssel Nachmachen</h5>
+                </div>
+                <div class="card-body">
+                    <p>ab,- 7,50 €</p>
+                </div>
+            </div>
+            <div class="service-card m-3">
+                <div class="card-header">
+                    <h5>Autoöffnung</h5>
+                </div>
+                <div class="card-body">
+                    <p>ab,- 120 €</p>
+                </div>
+            </div>
+            <div class="service-card m-3">
+                <div class="card-header">
+                    <h5>Tresoröffnung</h5>
+                </div>
+                <div class="card-body">
+                    <p>ab,- 89 €</p>
+                </div>
+            </div>
+            <div class="service-card m-3">
+                <div class="card-header">
+                    <h5>Auto Schlüssel nachmachen</h5>
+                </div>
+                <div class="card-body">
+                    <p>ab,- 89 €</p>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center flex-wrap">
+            <!-- Kartlar Başlangıcı -->
+            <div class="service-card m-3">
+                <div class="card-header">
+                    <h5>Türöffnung</h5>
+                </div>
+                <div class="card-body">
+                    <p>6:00 uhr bis 24:00<br>Festpreis 95 €</p>
+                </div>
+            </div>
+            <div class="service-card m-3">
+                <div class="card-header">
+                    <h5>Schlüssel Nachmachen</h5>
+                </div>
+                <div class="card-body">
+                    <p>ab,- 7,50 €</p>
+                </div>
+            </div>
+            <div class="service-card m-3">
+                <div class="card-header">
+                    <h5>Autoöffnung</h5>
+                </div>
+                <div class="card-body">
+                    <p>ab,- 120 €</p>
+                </div>
+            </div>
+            <div class="service-card m-3">
+                <div class="card-header">
+                    <h5>Tresoröffnung</h5>
+                </div>
+                <div class="card-body">
+                    <p>ab,- 89 €</p>
+                </div>
+            </div>
+            <div class="service-card m-3">
+                <div class="card-header">
+                    <h5>Auto Schlüssel nachmachen</h5>
+                </div>
+                <div class="card-body">
+                    <p>ab,- 89 €</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container my-5">
+        <h2 class="text-center fw-bold">Customer Reviews</h2>
+        <p class="text-center text-muted">Lassen Sie sich von unseren Kunden über unsere Produkt- und Servicequalität informieren!</p>
+
+        <!-- Carousel Başlangıcı -->
+        <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Yorum Kartı 1 -->
+                <div class="carousel-item active">
+                    <div class="review-card">
+                        <h5>Absolute Empfehlung!</h5>
+                        <p>„Die Schloss-Ambulanz aus Düsseldorf war schnell vor Ort und hat meine Haustür ohne Schäden geöffnet. Der Preis war auch absolut fair. Kann ich wärmstens weiterempfehlen, wenn jemand seinen Schlüssel verlieren sollte!“</p>
+                        <div class="review-footer">
+                            <span>Irena Schmidt</span>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Yorum Kartı 2 -->
+                <div class="carousel-item">
+                    <div class="review-card">
+                        <h5>Danke!</h5>
+                        <p>„Sehr nette Monteure und schnelle Ankunft. Die Tür war nach 20 Minuten wieder offen und das ohne einen Kratzer. Danke! Mein Nr. 1 Schlüsseldienst in Düsseldorf & Umkreis.“</p>
+                        <div class="review-footer">
+                            <span>Helmut Kohl</span>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Yorum Kartı 3 -->
+                <div class="carousel-item">
+                    <div class="review-card">
+                        <h5>Faire Preise!</h5>
+                        <p>„Die Preise der Schloss-Ambulanz aus Düsseldorf sind fair, anders als bei anderen Abzock-Schlüsseldiensten. Danke für die schnelle Türöffnung & frohe Weihnachten!“</p>
+                        <div class="review-footer">
+                            <span>Thomas Nieder</span>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sol Ok -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <!-- Sağ Ok -->
+            <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+
+
+    <div class="container my-5">
+        <h2 class="text-center fw-bold mb-4">Unsere Zulieferer</h2>
+        
+        <!-- Logo Grid -->
+        <div class="row g-4 text-center">
+            <div class="col-6 col-sm-4 col-md-3">
+                <img src="https://via.placeholder.com/150x80" alt="Logo 1" class="img-fluid logo-img">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+                <img src="https://via.placeholder.com/150x80" alt="Logo 2" class="img-fluid logo-img">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+                <img src="https://via.placeholder.com/150x80" alt="Logo 3" class="img-fluid logo-img">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+                <img src="https://via.placeholder.com/150x80" alt="Logo 4" class="img-fluid logo-img">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+                <img src="https://via.placeholder.com/150x80" alt="Logo 5" class="img-fluid logo-img">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+                <img src="https://via.placeholder.com/150x80" alt="Logo 6" class="img-fluid logo-img">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+                <img src="https://via.placeholder.com/150x80" alt="Logo 7" class="img-fluid logo-img">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+                <img src="https://via.placeholder.com/150x80" alt="Logo 8" class="img-fluid logo-img">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <footer class="bg-light text-dark py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Abonelik ve Sosyal Medya -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5>Abonnieren, um aktuelle Nachrichten zu verfolgen</h5>
+                    <div class="input-group my-3">
+                        <input type="email" class="form-control" placeholder="Bitte geben Sie Ihre E-Mail Adresse an!">
+                        <button class="btn btn-primary" type="button">Senden Sie</button>
+                    </div>
+                    <h6>Folgen Sie uns</h6>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="text-dark me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-dark me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="text-dark me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="#" class="text-dark me-3"><i class="fab fa-youtube fa-2x"></i></a>
+                    </div>
+                </div>
+
+                <!-- Menü ve Güvenlik -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <ul class="list-unstyled">
+                        <li>• Über Uns</li>
+                        <li>• Karriere</li>
+                        <li>• Impressum</li>
+                        <li>• Schlüsseldienst in der Nähe</li>
+                        <li>• Preise</li>
+                        <li>• Zahlungsmöglichkeiten</li>
+                        <li>• Kontakt</li>
+                    </ul>
+                    <div class="mt-4">
+                        <img src="https://via.placeholder.com/150x50" alt="SSL" class="img-fluid">
+                    </div>
+                    <div class="mt-3">
+                        <img src="https://via.placeholder.com/150x50" alt="24h Service" class="img-fluid">
+                    </div>
+                </div>
+
+                <!-- İletişim ve Ödeme -->
+                <div class="col-lg-4 col-md-12">
+                    <div class="text-center text-lg-start">
+                        <img src="https://via.placeholder.com/150x150" alt="Felix Logo" class="img-fluid mb-3">
+                        <p class="fw-bold mb-0">Kontaktieren Sie uns</p>
+                        <p>FELIX Schlüsseldienst</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Haußmannstraße 122B, 70188 Stuttgart</p>
+                        <p><i class="fas fa-phone"></i> +4917623513191</p>
+                        <p><i class="fas fa-envelope"></i> info@felixschluesseldienst.de</p>
+                        <h6>Zahlungsmöglichkeiten</h6>
+                        <div class="payment-icons mt-3">
+                            <i class="fab fa-cc-paypal fa-3x me-3"></i>
+                            <i class="fab fa-cc-visa fa-3x me-3"></i>
+                            <i class="fab fa-cc-mastercard fa-3x me-3"></i>
+                            <i class="fab fa-cc-discover fa-3x me-3"></i>
+                            <i class="fab fa-cc-amex fa-3x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Alt Bilgi -->
+            <div class="text-center mt-4">
+                <p class="text-muted">Copyright © 2024, Felix Schlüsseldienst. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
