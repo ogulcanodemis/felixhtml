@@ -31,9 +31,13 @@ body {
     }
 }
 .navbar {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1020; /* Menü her şeyin üzerinde olmalı */
+    background-color: #f8f9fa; /* Arka plan rengi */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+    width: 100% !important;
 }
-
 .nav-link {
     font-weight: 500;
 }
@@ -484,6 +488,15 @@ ul.list-unstyled li {
     }
     .key-pic {
         display: none !important;
+    }
+    .mobile-info img{
+        width: 95% !important;
+    }
+    .footer-mobile{
+        text-align: center;
+    }
+    .payment-icons i {
+        color: #007bff !important;
     }
 
 }
