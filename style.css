@@ -525,7 +525,7 @@ ul.list-unstyled li {
         justify-content: flex-start; /* Sol hizalı olur */
     }
     .top-title-mobile img {
-        width: 30px; /* Resim boyutunu küçült */
+        width: 155px; /* Resim boyutunu küçült */
     }
 
     .fa-search {
