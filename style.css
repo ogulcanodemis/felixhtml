@@ -131,15 +131,22 @@ body {
     background-color: #28a745 !important;
 }
 
+.logo-image {
+    width: 80px;
+}
+
+.top-header-phone-number {
+    width: 200px;
+}
 .bg-primary {
-    background-color: #fddc53 !important;
+    background-color: #3921f5 !important;
 }
 
 ul.list-unstyled li {
     margin-bottom: 10px;
 }
 .title-line {
-    background-color: #008531;
+    background-color: #ed1c24;
     color: #FFF;
     width: 100%;
     display: flex;
@@ -147,7 +154,7 @@ ul.list-unstyled li {
     justify-content: center;
 }
 .title-line-container {
-    background-color: #008531;
+    background-color: #ed1c24;
     color: #FFF;
     width: 100%;
 }
@@ -239,7 +246,7 @@ ul.list-unstyled li {
     background-color: #444;
 }
 .section-locksmith {
-    color: #000000 !important;
+    color: white !important;
 }
 
 .section-title {
@@ -252,7 +259,7 @@ ul.list-unstyled li {
     font-size: 1.5rem;
     margin-top: 20px;
     margin-bottom: 20px;
-    color:  black !important;
+    color:  white !important;
 }
 
 .section-description {
@@ -319,8 +326,8 @@ ul.list-unstyled li {
 }
 
 .service-card .card-header {
-    background: rgb(221,220,217);
-    background: linear-gradient(180deg, rgba(221,220,217,1) 0%, rgba(248,248,246,1) 100%);
+    background: rgb(0,112,230);
+    background: linear-gradient(90deg, rgba(0,112,230,1) 0%, rgba(57,33,245,1) 100%);
     padding: 10px;
     border-radius: 10px 10px 0 0 !important;
     text-align: center;
@@ -328,7 +335,7 @@ ul.list-unstyled li {
     min-height: 60px;
     max-height: 60px;
     font-size: 1rem !important;
-    color:black;
+    color:white !important;
     font-weight: bold;
 }
 
@@ -411,7 +418,7 @@ ul.list-unstyled li {
 }
 
 .payment-icons i {
-    color: #007bff;
+    color: #3921f5;
     transition: transform 0.2s ease;
 }
 
@@ -445,7 +452,22 @@ ul.list-unstyled li {
 }
 
 .repair-man {
-    color: black;
+    color: white;
+}
+.top-title-mobile .d-flex {
+    gap: 10px; /* Aralarındaki boşluk */
+}
+.mobile-euro {
+    display: block; /* Görüntülenmesini garanti altına al */
+    margin: 0 auto; /* Ortalamak için */
+    text-align: center; /* Ortalamayı desteklemek için */
+    width: 70px;
+}
+.phone-number-header {
+    width: 200px;
+}
+.contact-button {
+    margin-left: 10px; /* İki buton arasındaki mesafeyi ayarlayın */
 }
 @media screen and (max-width: 768px) {
     .left-info-card {
@@ -498,6 +520,18 @@ ul.list-unstyled li {
     .payment-icons i {
         color: #007bff !important;
     }
+    .top-title-mobile .d-flex {
+        flex-wrap: nowrap; /* Alanlar alt alta geçmez */
+        justify-content: flex-start; /* Sol hizalı olur */
+    }
+    .top-title-mobile img {
+        width: 30px; /* Resim boyutunu küçült */
+    }
+
+    .fa-search {
+        display: none;
+    }
+
 
 }
 @media screen and (min-width: 769px) {
@@ -509,5 +543,19 @@ ul.list-unstyled li {
     }
     .mobile-info-section {
         display: none;
+    }
+}
+@media (max-width: 992px) {
+    .d-flex.flex-wrap {
+        justify-content: space-between; /* Mobilde butonları ayırır */
+    }
+
+    .dropdown .btn {
+        font-size: 14px; /* Daha küçük ekranlar için font boyutu */
+    }
+
+    .contact-button {
+        font-size: 14px;
+        padding: 5px 10px;
     }
 }
