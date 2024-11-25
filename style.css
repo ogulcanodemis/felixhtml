@@ -469,6 +469,85 @@ ul.list-unstyled li {
 .contact-button {
     margin-left: 10px; /* İki buton arasındaki mesafeyi ayarlayın */
 }
+/* Sabit Sosyal Medya Çubuğu */
+.social-bar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Renk Ayarları */
+.whatsapp {
+    background-color: #25D366;
+}
+
+.phone {
+    background-color: #4CAF50;
+}
+
+.facebook {
+    background-color: #1877F2;
+}
+
+.twitter {
+    background-color: #1DA1F2;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #FFDD55, #FF543E, #C837AB);
+}
+
+.tiktok {
+    background-color: #010101;
+}
+
+.linkedin {
+    background-color: #0077B5;
+}
+
+/* Hover Efekti */
+.social-icon:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+/* Mobil Cihazlar için Ayarlar */
+@media (max-width: 768px) {
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+
 @media screen and (max-width: 768px) {
     .left-info-card {
         display: none !important;
