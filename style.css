@@ -161,6 +161,7 @@ ul.list-unstyled li {
 .card-container {
     background-color: #e6dede;
     border-radius: 0px;
+    padding: 3.5%;
 }
 .service-title {
     font-size: 2rem;
@@ -469,6 +470,7 @@ ul.list-unstyled li {
 .contact-button {
     margin-left: 10px; /* İki buton arasındaki mesafeyi ayarlayın */
 }
+
 /* Sabit Sosyal Medya Çubuğu */
 .social-bar {
     position: fixed;
@@ -482,6 +484,7 @@ ul.list-unstyled li {
 }
 
 .social-icon {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -492,8 +495,31 @@ ul.list-unstyled li {
     color: white;
     font-size: 20px;
     border-radius: 50%;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    background-color: #333;
+    animation: phoneShake 1s infinite ease-in-out;
+    border: 2px solid #ffffff;
+
 }
+
+/* Telefon çalması tarzında sallanma animasyonu */
+@keyframes phoneShake {
+    0%, 100% {
+        transform: rotate(0);
+    }
+    20% {
+        transform: rotate(-15deg);
+    }
+    40% {
+        transform: rotate(15deg);
+    }
+    60% {
+        transform: rotate(-10deg);
+    }
+    80% {
+        transform: rotate(10deg);
+    }
+}
+
 
 /* Renk Ayarları */
 .whatsapp {
@@ -501,7 +527,7 @@ ul.list-unstyled li {
 }
 
 .phone {
-    background-color: #4CAF50;
+    background-color: #3921f5;
 }
 
 .facebook {
@@ -529,22 +555,47 @@ ul.list-unstyled li {
     opacity: 0.8;
     transform: scale(1.1);
 }
+.payment-icons img {
+    width: 15%;
+}
+
+.social-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 35px;
+}
+.social-whatsapp {
+    font-size: 28px !important;
+}
+.social-whatsapp {
+    font-size: 40px !important;
+}
+.fair-card {
+    padding: 0px !important;
+}
 
 /* Mobil Cihazlar için Ayarlar */
 @media (max-width: 768px) {
     .social-icon {
         width: 40px;
         height: 40px;
-        font-size: 16px;
+        font-size: 20px;
+    }
+    .fair-bullets {
+        display: none !important;
     }
 }
 
 @media (max-width: 480px) {
     .social-icon {
-        width: 35px;
-        height: 35px;
-        font-size: 14px;
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
     }
+    .social-whatsapp {
+        font-size: 28px !important;
+    }
+
 }
 
 
@@ -604,7 +655,7 @@ ul.list-unstyled li {
         justify-content: flex-start; /* Sol hizalı olur */
     }
     .top-title-mobile img {
-        width: 155px; /* Resim boyutunu küçült */
+        width: 200px; /* Resim boyutunu küçült */
     }
 
     .fa-search {
