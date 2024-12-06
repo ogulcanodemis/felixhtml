@@ -556,7 +556,7 @@ ul.list-unstyled li {
     transform: scale(1.1);
 }
 .payment-icons img {
-    width: 15%;
+    width: 18% !important;
 }
 
 .social-icon {
@@ -591,6 +591,9 @@ ul.list-unstyled li {
     }
     .fair-bullets {
         display: none !important;
+    }
+    .payment-icons img {
+        width: 30% !important;
     }
 }
 
