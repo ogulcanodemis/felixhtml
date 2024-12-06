@@ -399,7 +399,6 @@ ul.list-unstyled li {
     height: auto;
     display: block;
     margin: 0 auto;
-    filter: grayscale(50%); /* Gri ton efekti */
     transition: filter 0.3s ease;
 }
 
