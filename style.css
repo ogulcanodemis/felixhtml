@@ -574,7 +574,14 @@ ul.list-unstyled li {
     padding: 0px !important;
 }
 
-
+.top-title-mobile h4 {
+    background-color: #3921f5; 
+    width: 35%; 
+    color: white; 
+    border-radius: 10px; 
+    font-size: 1rem; 
+    padding: 15px
+}
 /* Mobil Cihazlar için Ayarlar */
 @media (max-width: 768px) {
     .social-icon {
@@ -657,6 +664,15 @@ ul.list-unstyled li {
     }
     .top-title-mobile img {
         width: 200px; /* Resim boyutunu küçült */
+    }
+    .top-title-mobile {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    box-shadow: -1px 29px 25px 0px rgb(255 255 255);
+    z-index: 99;
+    border-radius: 5px;
     }
 
     .fa-search {
