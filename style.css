@@ -403,9 +403,6 @@ ul.list-unstyled li {
     transition: filter 0.3s ease;
 }
 
-.logo-img:hover {
-    filter: grayscale(0%); /* Hover sırasında renkli hale gelir */
-}
 
 .row.g-4 {
     justify-content: center; /* Logoların düzgün hizalanması için */
