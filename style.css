@@ -705,3 +705,38 @@ ul.list-unstyled li {
         padding: 5px 10px;
     }
 }
+
+.mobile-call-button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #28a745; /* Yeşil renk */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 18px;
+    z-index: 1000;
+    display: none; /* Varsayılan olarak gizli */
+}
+
+.mobile-call-button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.mobile-call-button img {
+    width: 20px;
+    height: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .mobile-call-button {
+        display: block; /* Mobil cihazlarda görünür yap */
+    }
+}
